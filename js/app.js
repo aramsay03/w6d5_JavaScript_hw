@@ -13,7 +13,7 @@ const handleNewItemFormSubmit = function (event) {
   const deviceList = document.querySelector('#stored-items-list');
   deviceList.appendChild(deviceListItem);
 
-  event.target.reset();
+  // event.target.reset();
 }
 
 const createdeviceListItem = function (form) {

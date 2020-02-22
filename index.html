@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <div class="form">
-      <form id="dataEntryForm" action="index.html" method="post">
+    <form id="dataEntryForm" action="index.html" method="post">
+      <div class="form">
         <div class="form-item">
           <label for="device" class="">Device</label>
           <input type="text" id="device" name="" value="" required>
@@ -45,16 +45,17 @@
         <div class="form-item">
           <input type="submit" value="save"/>
         </div>
-
-      </form>
-    </div>
+      </div>
+    </form>
 
     <div class="entries-header">
       <h1>Installed Home Automation Devices</h1>
-      <button type="button" id="delete-all">Delete All</button>
     </div>
     <ul id="stored-items-list">
 
     </ul>
+    <div class="footer">
+      <button type="button" id="delete-all">Delete All</button>
+    </div>
   </body>
 </html>
