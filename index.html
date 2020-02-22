@@ -7,23 +7,53 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <form class="" action="index.html" method="post">
-      <div class="">
-        <label for="" class="">?????</label>
-        <input type="text" id="" name="" value="">
-      </div>
+    <div class="form">
+      <form id="dataEntryForm" action="index.html" method="post">
+        <div class="form-item">
+          <label for="device" class="">Device</label>
+          <input type="text" id="device" name="" value="" required>
+        </div>
 
-      <div class="">
-        <label for="" class="">?????</label>
-        <input type="text" id="" name="" value="">
-      </div>
+        <div class="form-item">
+          <label for="deviceFunction" class="">Device Function</label>
+          <input type="text" id="deviceFunction" name="" value="">
+        </div>
 
-    </form>
+        <div class="form-item">
+          <label for="power" class="primary">Power Type</label>
+          <select id="power" required>
+            <option value="" disabled selected></option>
+            <option value="Battery">Battery</option>
+            <option value="Mains">Mains</option>
+          </select>
+        </div>
 
-    <button type="button" name="delete-all">Delete All</button>
+        <div class="form-item">
+          <label for="room" class="primary">Category</label>
+          <select id="room" required>
+            <option value="" disabled selected></option>
+            <option value="" id="list-header" disabled >Down Stairs</option>
+            <option value="Livingroom">Livingroom</option>
+            <option value="Dining Room">Dining Room</option>
+            <option value="Kitchen">Kitchen</option>
+            <option value="" id="list-header" disabled >Upstairs</option>
+            <option value="Jack's Room">Jack's Room</option>
+            <option value="Office">Office</option>
+          </select>
+        </div>
 
-    <h1>??????</h1>
-    <ul id="">
+        <div class="form-item">
+          <input type="submit" value="save"/>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="entries-header">
+      <h1>Installed Home Automation Devices</h1>
+      <button type="button" name="delete-all">Delete All</button>
+    </div>
+    <ul id="stored-items-list">
 
     </ul>
   </body>
